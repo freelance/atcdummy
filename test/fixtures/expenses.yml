@@ -1,0 +1,23 @@
+# == Schema Information
+#
+# Table name: expenses
+#
+#  id             :integer          not null, primary key
+#  spreadsheet_id :integer
+#  gastov         :decimal(8, 2)
+#  edescription   :text
+#  created_at     :datetime         not null
+#  updated_at     :datetime         not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  spreadsheet: one
+  gastov: 9.99
+  edescription: MyText
+
+two:
+  spreadsheet: two
+  gastov: 9.99
+  edescription: MyText

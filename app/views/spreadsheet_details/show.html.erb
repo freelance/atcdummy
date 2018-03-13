@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Spreadsheet:</strong>
+  <%= @spreadsheet_detail.spreadsheet_id %>
+</p>
+
+<p>
+  <strong>Totalv:</strong>
+  <%= @spreadsheet_detail.totalv %>
+</p>
+
+<p>
+  <strong>Netov:</strong>
+  <%= @spreadsheet_detail.netov %>
+</p>
+
+<p>
+  <strong>Gastov:</strong>
+  <%= @spreadsheet_detail.gastov %>
+</p>
+
+<p>
+  <strong>Choferv:</strong>
+  <%= @spreadsheet_detail.choferv %>
+</p>
+
+<%= link_to 'Edit', edit_spreadsheet_detail_path(@spreadsheet_detail) %> |
+<%= link_to 'Back', spreadsheet_details_path %>

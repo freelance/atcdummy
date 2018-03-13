@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>License:</strong>
+  <%= @ticket.license %>
+</p>
+
+<p>
+  <strong>Code:</strong>
+  <%= @ticket.code %>
+</p>
+
+<p>
+  <strong>Totalvt:</strong>
+  <%= @ticket.totalvt %>
+</p>
+
+<p>
+  <strong>Netov:</strong>
+  <%= @ticket.netov %>
+</p>
+
+<p>
+  <strong>Gastov:</strong>
+  <%= @ticket.gastov %>
+</p>
+
+<p>
+  <strong>Choferv:</strong>
+  <%= @ticket.choferv %>
+</p>
+
+<%= link_to 'Edit', edit_ticket_path(@ticket) %> |
+<%= link_to 'Back', tickets_path %>

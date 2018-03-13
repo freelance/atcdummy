@@ -1,0 +1,32 @@
+# == Schema Information
+#
+# Table name: spreadsheets
+#
+#  id         :integer          not null, primary key
+#  number     :integer
+#  date       :date
+#  state      :integer
+#  tneto      :decimal(8, 2)
+#  tgastog    :decimal(8, 2)
+#  tapagar    :decimal(8, 2)
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  number: 1
+  date: 2018-03-12
+  state: 1
+  tneto: 9.99
+  tgastog: 9.99
+  tapagar: 9.99
+
+two:
+  number: 1
+  date: 2018-03-12
+  state: 1
+  tneto: 9.99
+  tgastog: 9.99
+  tapagar: 9.99

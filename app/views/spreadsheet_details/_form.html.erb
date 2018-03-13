@@ -1,0 +1,42 @@
+<%= form_with(model: spreadsheet_detail, local: true) do |form| %>
+  <% if spreadsheet_detail.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(spreadsheet_detail.errors.count, "error") %> prohibited this spreadsheet_detail from being saved:</h2>
+
+      <ul>
+      <% spreadsheet_detail.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :spreadsheet_id %>
+    <%= form.number_field :spreadsheet_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :totalv %>
+    <%= form.text_field :totalv %>
+  </div>
+
+  <div class="field">
+    <%= form.label :netov %>
+    <%= form.text_field :netov %>
+  </div>
+
+  <div class="field">
+    <%= form.label :gastov %>
+    <%= form.text_field :gastov %>
+  </div>
+
+  <div class="field">
+    <%= form.label :choferv %>
+    <%= form.text_field :choferv %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,29 @@
+# == Schema Information
+#
+# Table name: spreadsheet_details
+#
+#  id             :integer          not null, primary key
+#  spreadsheet_id :integer
+#  totalv         :decimal(8, 2)
+#  netov          :decimal(8, 2)
+#  gastov         :decimal(8, 2)
+#  choferv        :decimal(8, 2)
+#  created_at     :datetime         not null
+#  updated_at     :datetime         not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  spreadsheet_id: 1
+  totalv: 9.99
+  netov: 9.99
+  gastov: 9.99
+  choferv: 9.99
+
+two:
+  spreadsheet_id: 1
+  totalv: 9.99
+  netov: 9.99
+  gastov: 9.99
+  choferv: 9.99

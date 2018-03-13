@@ -1,0 +1,47 @@
+<%= form_with(model: spreadsheet, local: true) do |form| %>
+  <% if spreadsheet.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(spreadsheet.errors.count, "error") %> prohibited this spreadsheet from being saved:</h2>
+
+      <ul>
+      <% spreadsheet.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :number %>
+    <%= form.number_field :number %>
+  </div>
+
+  <div class="field">
+    <%= form.label :date %>
+    <%= form.date_select :date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :state %>
+    <%= form.number_field :state %>
+  </div>
+
+  <div class="field">
+    <%= form.label :tneto %>
+    <%= form.text_field :tneto %>
+  </div>
+
+  <div class="field">
+    <%= form.label :tgastog %>
+    <%= form.text_field :tgastog %>
+  </div>
+
+  <div class="field">
+    <%= form.label :tapagar %>
+    <%= form.text_field :tapagar %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

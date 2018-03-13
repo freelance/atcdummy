@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Number:</strong>
+  <%= @spreadsheet.number %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @spreadsheet.date %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @spreadsheet.state %>
+</p>
+
+<p>
+  <strong>Tneto:</strong>
+  <%= @spreadsheet.tneto %>
+</p>
+
+<p>
+  <strong>Tgastog:</strong>
+  <%= @spreadsheet.tgastog %>
+</p>
+
+<p>
+  <strong>Tapagar:</strong>
+  <%= @spreadsheet.tapagar %>
+</p>
+
+<%= link_to 'Edit', edit_spreadsheet_path(@spreadsheet) %> |
+<%= link_to 'Back', spreadsheets_path %>

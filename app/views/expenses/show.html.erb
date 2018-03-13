@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Spreadsheet:</strong>
+  <%= @expense.spreadsheet %>
+</p>
+
+<p>
+  <strong>Gastov:</strong>
+  <%= @expense.gastov %>
+</p>
+
+<p>
+  <strong>Edescription:</strong>
+  <%= @expense.edescription %>
+</p>
+
+<%= link_to 'Edit', edit_expense_path(@expense) %> |
+<%= link_to 'Back', expenses_path %>
